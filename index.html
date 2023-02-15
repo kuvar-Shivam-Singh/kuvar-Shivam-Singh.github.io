@@ -1,12 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+/>
+    <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script>
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="img/about-img.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@1,200&family=Lobster&family=PT+Serif:ital@1&family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/f118dac063.js" crossorigin="anonymous"></script> -->
+    <title>Portfolio | Binod</title>
 </head>
-<body>
-        making Portfolio
+<body id="body" >
+
+    <!-- <div id="intro_animation">
+        <div>
+            <img src="img/logo gif.gif" alt="">
+            <h2>Welcome To Binod's Portfolio.....</h2>
+        </div>
+
+    </div> -->
+
+    <!-- total navbar from scratch. -->
+    <div id="nav-menu">
+        <div id="logo">
+           
+            <div class="logo-name">
+                <p><span>Shivam</span>  Singh</p>
+            </div>
+        </div>
+
+        
+
+        <div id="menu-list">
+            <ul>
+                <li class="nav-link home"><a href="#home"><i class="fa-solid fa-house"></i> HOME</a></li>
+                <li class="nav-link about"><a href="#about">ABOUT</a></li>
+                <li class="nav-link skills"><a href="#skills">SKILLS</a></li>
+                <li class="nav-link projects"><a href="#projects">PROJECTS</a></li>
+                <li class="nav-link contact"><a href="#contact">CONTACT</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- //Downlodable RESUME button. -->
+        <div id="resume-button-1" class="nav-link resume">
+            
+            <button id="primary-btn"  class="resume-btn1">RESUME <i class="fa-solid fa-download"></i></button>
+            <!-- <button id="primary-btn"><i class="fa-solid fa-user"></i> Admin Workspace</button> -->
+        </div>
+
+
+        <!-- // Theme changing toogle button. -->
+        <div id="change-theme">
+            <p class="theme-logo"><i class="fa-solid fa-moon"></i> </p>
+        </div>
+
+        <div id="menu-list-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div id="menu-close-icon">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Home banner Section ....... -->
+
+    <div id="home">
+
+        <!-- left section of main banner -->
+        <div id="main-left">
+            <div class="salute-sec">
+                <p>Hello <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> </p>
+            </div>
+
+            <div class="name-sec" id="user-detail-name">
+                <p>My name is <span >D Binod</span> </p>
+            </div>
+
+            <div id="subtitle-sec" >
+                <p>I am a <span class="auto-type"></span></p>
+            </div>
+
+            <div id="social-icon-1">
+                <div class="linked-icon" id="contact-linkedin"><i class="fa-brands fa-linkedin"></i></div>
+                <div class="github-icon" id="contact-github"><i class="fa-brands fa-github"></i></div>
+
+                <div class="mail-icon" id="contact-email"><i class="fa-solid fa-envelope"></i></div>
+            </div>
+
+            <div class="resume-btn-1" id="resume-button-2">
+                <button id="primary-btn" class="resume-btn2">Resume <i class="fa-solid fa-download"></i></button>
+            </div>
+        </div>
+
+        <!-- Right section of main banner -->
+
+        <div id="main-right">
+            <div id="banner-img" >
+                <img class="home-img" src="img/main-imgs.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--About Me setion-->
+
+    <div id="about" class="about section">
+        <div >
+            <h2 class="primary-heading">About <span class="primary-heading-span">Me</span> </h2>
+        </div>
+
+        <div class="content-section">
+            <div class="about-img">
+                <img src="img/about-img.svg" alt="">
+            </div>
+
+            <div class="about-content">
+                <p id="user-detail-intro"><i class="fa-solid fa-gear"></i>  &nbsp;  Hello, My name is D Binod and I enjoy creating things that fulfiled with Logic.</p>
+
+                <p><i class="fa-solid fa-gear"></i> &nbsp; A passionate Backend developer with core knowledge of <b>JAVA, SPRING-BOOT, MySQL </b>. Works efficiently both in frontend as well as backend and is proficient in Data Structure and Algorithms with good problem solving skills.</p>
+
+                <p><i class="fa-solid fa-gear"></i>  &nbsp; Dedicate to developing robust applications that interact with the Backend part of web applications.</p>
+
+                <P><i class="fa-solid fa-gear"></i>  &nbsp; I built 2 major projects and 10+ mini projects. Learned a great deal about teamwork, leadership, and communication. After 8 months of rigorous training, here I am looking for an opportunity as a <b>Java Backend Developer</b>.</P>
+
+            
+                <button id="primary-btn" class="resume-btn3" >Resume <i class="fa-solid fa-download"></i></button>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Project Section... -->
+    <div id="projects">
+        <div >
+            <h2 class="primary-heading">My <span class="primary-heading-span">Projects</span> </h2>
+        </div>
+
+
+        <!-- Max fashion clone... -->
+        <div id="project-items">
+            <div class="project-card">
+                <div class="prj-img">
+                    <img src="img/max-prj.gif" alt="">
+                </div>
+                <div class="project-title">
+                    <p><a href="https://team-max-u3.netlify.app/" target="_blank">Max fashion-Clone <i class="fa-solid fa-link"></i></a></p>
+                </div>
+    
+                <div class="project-description">
+                    <p>This is a clone of maxfashion.in.It is a E-Commerce website that deals with B2B and B2C,Selling products that belongs fashion categry.In this project, I was responsible for features like SignUp & signin, Search functionality, Order traking managment. </p>
+                </div>
+    
+                <div class="project-tech-stack">
+                    <p>Tech Stack: <br> <span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="">
+    
+                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="">
+    
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="">
+                    </span></p>
+                </div>
+    
+                <div class="prj-type">
+                    <p>Group Project :<span>4 Collaborator</span></p>
+    
+                    <p>Duration : <span>04 Days</span></p>
+                </div>
+    
+                <div class="prj-links">
+                   <a  class="project-github-link" href="https://github.com/Binodgith/hunky-potato-4915" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+    
+                   <a class="project-deployed-link" href="https://team-max-u3.netlify.app/index.html" target="_blank"><i class="fa-solid fa-eye"></i> Deployed</a>
+                </div>
+            </div>
+
+            <!-- Nykaa project -->
+            <div class="project-card">
+                <div class="prj-img">
+                    <img src="img/nykka-prj.gif" alt="">
+                </div>
+                <div class="project-title">
+                    <p><a href="https://binodwebnykaa.netlify.app/" target="_blank">Nykaa fashion India- Clone <i class="fa-solid fa-link"></i></a></p>
+                </div>
+    
+                <div class="project-description">
+                    <p>This is a clone of nykaa.com.It is a E-Commerce website that deals with B2B and B2C,Selling products that belongs fashion categry.In this project, I was responsible for Every Freatures features from login functionality to media query. </p>
+                </div>
+    
+                <div class="project-tech-stack">
+                    <p>Tech Stack: <br><span>
+                        <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="">
+    
+                        <img src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="">
+    
+                        <img src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="">
+                    </span></p>
+                </div>
+    
+                <div class="prj-type">
+                    <p>Individual Project :<span> </span></p>
+    
+                    <p>Duration : <span>05 Days</span></p>
+                </div>
+    
+                <div class="prj-links">
+                   <a class="project-github-link" href="https://github.com/Binodgith/debonair-trip-3458" target="_blank"><i class="fa-brands fa-github"></i> Gthub</a>
+    
+                   <a class="project-deployed-link" href="https://binodwebnykaa.netlify.app/" target="_blank"><i class="fa-solid fa-eye"></i> Deployed</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+    <!-- Skills Section... -->
+
+    <div id="skills">
+        <div >
+            <h2 class="primary-heading">My <span class="primary-heading-span">Technical  Skills</span> </h2>
+        </div>
+
+
+        <div id="techskill-content">
+            <div class="skills-card">
+                <img  class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/java-14.svg" alt="">
+
+                <p class="skills-card-name">Java</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/spring-3.svg" alt="">
+
+                <p class="skills-card-name">Spring Boot</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/mysql-6.svg" alt="">
+
+                <p class="skills-card-name">MySQL</p>
+            </div>
+
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg" alt="">
+
+                <p class="skills-card-name">JavaScript</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="">
+
+                <p class="skills-card-name">HTML</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="">
+
+                <p class="skills-card-name">CSS</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="">
+
+                <p class="skills-card-name">Boostrap</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="">
+
+                <p class="skills-card-name">Git</p>
+            </div>
+
+            <div class="skills-card">
+                <img class="skills-card-img" src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="">
+
+                <p class="skills-card-name">App Script</p>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Profile banner setting -->
+    <!-- <div id="profile-banner">
+        <img src="img/profile-banner.jpg" alt="">
+    </div> -->
+
+
+<!-- Github Overview -->
+
+    <div id="github-view">
+        <div >
+            <h2 class="primary-heading"><i class="fa-brands fa-github"></i> GitHub <span class="primary-heading-span">Overview</span> </h2>
+        </div>
+
+<!-- github-property before class -->
+        <div id="github-cal" class="react-activity-calendar">
+            LoadinG....
+            <!-- <img src="img/github-cal(light).png" alt="github Calender"> -->
+        </div>
+
+        <div id="github-stats-card" >
+            <div  class="github-property">
+                <img id="github-stat" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=binodgith&show_icons=true&theme=light&border_radius=8" alt="">
+            </div>
+
+            <div  class="github-property">
+                <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=binodgith&theme=default&border_radius=8&color=#43BEE5" alt="">
+            </div>
+        </div>
+
+
+        <div  class="github-property">
+            <img  id="github-top-langs" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=tusharkadam7671&show_icons=true&locale=en&layout=compact" alt="">
+        </div>
+    </div>
+    
+
+
+
+<!----- bullet points -->
+
+    <div id="bullet-points">
+        <div class="bullet-box">
+            <p class="line1">1300+</p>
+            <p class="line2">Hours</p>
+            <p class="line3">Coding</p>
+        </div>
+
+        <div class="bullet-box">
+            <p class="line1">906+</p>
+            <p class="line2">DSA</p>
+            <p class="line3">Solved</p>
+        </div>
+
+        <div class="bullet-box">
+            <p class="line1">3+</p>
+            <p class="line2">Projects</p>
+            <p class="line3">Presented</p>
+        </div>
+
+        <div class="bullet-box">
+            <p class="line1">900+</p>
+            <p class="line2">Hours</p>
+            <p class="line3">DSA</p>
+        </div>
+    </div>
+
+
+
+<!------- Contact me section... -->
+
+    <div id="contact">
+        <div >
+            <h2 class="primary-heading">Contact <span class="primary-heading-span">Me</span> </h2>
+        </div>
+
+
+        <div id="contact-section">
+            <div id="contact-left">
+
+                <div id="contact-me-img">
+                    <img src="img/contact-me.svg" alt="">
+                </div>
+                
+            </div>
+    
+    
+            <div id="contact-right">
+                <div id="social-icons2">
+                    <div class="linkedin-icon2" id="contact-linkedin">
+                        <a href="https://www.linkedin.com/in/binod-dev/" target="_blank"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    </div>
+                    <div class="github-icon2" id="contact-github">
+                        <a href="https://github.com/Binodgith" target="_blank"> <i class="fa-brands fa-github"></i> Github</a>
+                    </div>
+                    <!-- <br> -->
+                    <div class="mail-icon2" id="contact-email">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=dbinod2020@gmail.com&su=Hey+I+want+to+connect+with+you&tf=cm" target="_blank"> <i class="fa-solid fa-envelope"> </i> dbinod2020@gmail.com </a>
+                    </div>
+                    <!-- <br> -->
+    
+                    <div class="call-icon2" id="contact-phone">
+                        <a href="tel:7205289729"><i class="fa-solid fa-phone" target="_blank"></i> +917205289729</a>
+                    </div>
+                </div>
+    
+                
+                <p>----------OR----------</p>
+                
+    
+                <div id="contact-form" >
+                    <div  id="contact-form1">
+                        <input type="text" name="name" id="name-div" placeholder="Enter Name" required>
+    
+                        <input type="email" name="email" id="email-div" placeholder="Enter Email" required>
+    
+                        <input type="number" name="mobile" id="mobile-div" placeholder="Enter Mobile Number" required>
+    
+                        <textarea name="message" id="message-div" cols="30" rows="5" placeholder="Type your Message to me........" required></textarea>
+                        
+                        <div class="upload-area">
+                            Upload a file: 
+                            <select name="ask-upload" id="ask-upload">
+                                <option value="true">Yes</option>
+                                <option value="false" selected>No</option>
+                            </select>
+                        </div>
+<!-- Upload input creating ......................... -->
+                        <div id="upload-box">
+                            <input type="file" name="file-upload" id="file-upload">
+                            <div id="uploaded_show"></div>
+                        </div>
+
+                        <div class="contact-form-btn">
+                            <button id="form-submit-btn" >Submit</button>
+    
+                            <button id="form-reset-btn" >Reset</button>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        
+    </div>
+
+
+    <div id="footer-section">
+        <p>Developed & Designed by @Binod |
+        <span id="footer-year"></span> All right reserved.</p>
+
+        <div id="social-icons2">
+            <div class="linkedin-icon2">
+                <a href="https://www.linkedin.com/in/binod-dev/" target="_blank"> <i class="fa-brands fa-linkedin" ></i></a>
+            </div>
+            <div class="github-icon2">
+                <a href="https://github.com/Binodgith" target="_blank"> <i class="fa-brands fa-github" ></i></a>
+            </div>
+            <div class="mail-icon2">
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=dbinod2020@gmail.com&su=Hey+I+want+to+connect+with+you&tf=cm"  target="_blank"> <i class="fa-solid fa-envelope"> </i></a>
+            </div>
+
+            <div class="call-icon2">
+                <a href="tel:7205289729"  target="_blank"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Alert pop section  -->
+    <div id="alert-section">
+        <p id="alert-text"></p>
+    </div>
+
+
+
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+
+
+
+
+<!-- Addind Github CALENDER -->
+<!-- Prepare a container for your calendar. -->
+<script
+  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
+>
+</script>
+
+
+<script>
+    new GitHubCalendar("#github-cal", 'binodgith');
+</script>
+
+
+
+
+
+
+
+
+<script>
+
+    var typed =new Typed(".auto-type",{
+        strings:["Web Developer","Java Backend Developer"],
+        typeSpeed:150,
+        backSpeed:30,
+        loop:true
+    })
+</script>
+
+<script src="js/index.js"></script>
+<script src="js/crud_op.js"></script>
