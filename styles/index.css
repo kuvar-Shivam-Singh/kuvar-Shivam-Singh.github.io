@@ -1,0 +1,932 @@
+*{
+        margin: 0;
+        padding: 0;
+    }
+    
+    
+    
+    /* Here is root of Every Color */
+    
+    :root{
+        --primary-color:#ffffff;
+        --secondary-color:#146ebe;
+        --black-color:#000000;
+        --fade-black-color:#333333;
+        --gray-color:rgb(209, 209, 209);
+        --ghost-white:ghostwhite;
+        --primary-btn-colr:ghostwhite;
+        --red-color:#d70606;
+    }
+    
+    .dark-mode{
+        --primary-color:#181818;
+        --secondary-color:#146ebe;
+        --black-color:ghostwhite ;
+        --fade-black-color:#ffffff;
+        --gray-color:rgb(209, 209, 209);
+        --ghost-white:black;
+    }
+    
+    
+    html{
+        scroll-behavior: smooth;
+        
+    }
+    
+     ::-webkit-scrollbar{
+        width:auto;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--secondary-color);
+        border-radius: 15px;
+    }
+    
+    
+    
+    body{
+        background-color: var(--primary-color);
+      
+        
+    }
+    
+    /* Intro animation........................ */
+    
+    #intro_animation{
+        height: 100vh;
+        width: 100%;
+        /* margin: auto; */
+        position: fixed;
+        background-color: #fff;
+        z-index: 999;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #intro_animation div{
+        font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+        font-size: larger;
+        width: 20%;
+        margin:20vh auto;
+        align-items: center;
+        justify-content: center;
+        color: var(--secondary-color);
+    
+    }
+    
+    #intro_animation div img{
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    #nav-menu{
+        /* width: 100%; */
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        align-items: center;
+        position: sticky;
+        top: 0px;
+        box-shadow: 1px 1px rgb(236, 235, 235);
+        background-color:var(--ghost-white);
+        z-index: 100;
+    }
+    
+    #nav-menu>#logo{
+        width: 60%;
+        font-size: 3rem;
+        margin: auto 30px;
+        font-family: 'PT Serif', serif;
+        font-weight: 800;
+        color: var(--black-color);
+        width: 20%;
+        
+    }
+    #nav-menu>#logo>.logo-name>p>span{
+        font-family: 'Lobster', cursive;
+        color: var(--secondary-color);
+        font-size: 4rem;
+    
+    }
+    #nav-menu>#menu-list{
+        width: auto;
+    }
+    #nav-menu>#menu-list>ul{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        cursor: pointer;
+        width: auto;
+    }
+    
+    #menu-list>ul>li a{
+        text-decoration: none;
+        font-size: 15px;
+        margin:auto 16px;
+        color: var(--black-color);
+        font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+    
+    
+    #menu-list>ul>li a:hover{
+        color: var(--secondary-color);
+    }
+    
+    /* primary blue button. It mainly denoting to the resume Button */
+     #primary-btn{
+        /* width: 30%; */
+        font-size: 14px;
+        border-radius: 17px;
+        padding: 10px;
+        border: none;
+        margin-right:  10px;
+        color: var(--primary-btn-colr);
+        background-color: var(--secondary-color);
+        /* color: white; */
+        font-weight: 600;
+        font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    #nav-menu>#change-theme{
+        /* width: 5%; */
+        font-size: 25px; ;
+        color: var(--black-color);
+        margin:auto 20px;
+        cursor: pointer;
+        width: auto;
+        transition: 0.5s;
+    }
+     #primary-btn:hover{
+        background-color:var(--primary-color);
+        color: var(--secondary-color);
+        border: 1px solid gray;
+    }
+    
+    #nav-menu>#change-theme:hover{
+        transform: rotateZ(-40deg);
+        font-size: 27px;
+        
+    }
+    
+    #nav-menu #menu-close-icon i{
+        /* position: absolute; */
+        visibility: hidden;
+    }
+    
+    #menu-list-icon{
+        visibility: hidden;
+        
+    }
+     
+    
+    
+    
+    
+    
+    
+    
+    /* Main ssection degined................... */
+    #home{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        /* position:sticky; */
+        top: 0px;
+        width: 100%;
+        /* height: 100vh; */
+        /* font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif; */
+        font-family: Times New Roman,Times,serif;
+        color: var(--black-color);
+        z-index: -10;
+    
+       
+        
+    }
+    #home>#main-left{
+        width: 40%;
+        font-size: 35px;
+        /* margin: auto; */
+        margin: 100px auto;
+        font-family: cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+    }
+    
+    
+    #home>#main-left>.salute-sec img{
+        width: 50px;
+    }
+    
+    #home>#main-left>.name-sec span{
+        font-size:4rem;
+        font-family: 'Lobster', cursive;
+        /* font-weight:bold; */
+        color: var(--secondary-color);
+    }
+    
+    #home>#main-left>#subtitle-sec{
+        font-size: 30px;
+        margin: 5px auto;
+      
+        font-family: Times New Roman,Times,serif;
+    }
+    
+    #home>#main-left>#subtitle-sec .auto-type{
+        font-size: 30px;
+          font-family: apple-system,BlinkMacSystemFont,Segoe UI;
+        font-weight: bold;
+        color:red;
+    }
+    
+    #home>#main-left>#social-icon-1{
+        display: flex;
+    }
+    #home>#main-left>#social-icon-1 div i{
+        margin-right: 20px;
+        font-size: 23px;
+        padding: 12px;
+        border-radius: 50%;
+        background-color:var(--secondary-color);
+        color: var(--primary-btn-colr);
+        transition: 0.3s;
+    }
+    
+    #home>#main-left>#social-icon-1 div i:hover{
+        color:var(--secondary-color);
+        background-color:var(--primary-btn-color);
+        border: 1px solid var(--black-color);
+        cursor: pointer;
+    
+    }
+    
+    #home>#main-left>.resume-btn-1 #primary-btn{
+        font-size: 20px;
+        margin: 30px auto;
+        border-radius: 5px;
+    }
+    
+    
+    
+    /*main  Right Section degining */
+    #home>#main-right{
+        width:40%;
+        /* margin-left: 30px; */
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #home>#main-right img{
+        width:35vw;
+        margin-top: 40px;
+        transition: 1s;
+       
+    }
+    #home>#main-right img:hover{
+        width: 37vw;
+        margin-right: 10px;
+    }
+    
+    
+    
+    
+    /* About Me secction design  */
+    
+    #about{
+        background-color:var(--ghost-white);
+        color: var(--black-color);
+        padding: 50px ;
+        /* box-shadow: 1px -5px 10px var(--gray-color); */
+    }
+    
+    .primary-heading{
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI;
+        font-size: 40px;
+        text-align: center;
+    }
+    .primary-heading>.primary-heading-span{
+        color: var(--secondary-color);
+    }
+    
+    #about>.content-section{
+        display: flex;
+        justify-content: space-between;
+        margin: 30px auto ;
+    }
+    
+    #about>.content-section>.about-img{
+        width: 50%;
+        margin: auto;
+    }
+    #about>.content-section>.about-img img{
+        width: 80%;
+        margin: auto;
+    }
+    
+    #about>.content-section>.about-content{
+        width: 50%;
+        margin:auto ;
+        
+    }
+    
+    #about>.content-section>.about-content p{
+        font-family:ubuntu, cera-round-pro,Helvetica,Neue,Helvetica,Arial,sans-serif;
+        text-align: left;
+        font-size: 18px;
+        /* margin-bottom: 15px; */
+        line-height: 30px;
+        color: var(--fade-black-color);
+    }
+    
+    
+    
+    /* icon rotating animation. */
+    #about>.content-section>.about-content p i{
+        color: var(--secondary-color);
+        font-size: 25px;
+        animation: rotate 1.5s linear infinite ;
+    }
+    
+    @keyframes rotate {
+        0%{transform: rotateZ(90deg);}
+        25%{transform: rotateZ(180deg);}
+        50%{transform: rotateZ(270deg);}
+        100%{transform: rotateZ(0deg);}
+        /* 100%{transform: rotateZ(0deg);} */
+    }
+    
+    
+    
+    
+    /* projects management section strarted designing..... */
+    #projects{
+        width: 80%;
+        margin:30px auto;
+        color: var(--black-color);
+        font-family:ubuntu, cera-round-pro,Helvetica;
+    }
+    
+    #projects>#project-items{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        gap: 30px;
+        margin: 60px auto;
+    }
+    
+    #projects>#project-items>.project-card{
+        margin: 10px;
+        background-color:var(--ghost-white);
+        padding: 20px;
+        border: 1px solid var(--black-color);
+        box-shadow: -15px -10px 0px  var(--fade-black-color);
+        transition: 0.7s;
+    }
+    
+    #projects>#project-items>.project-card:hover{
+         /* width: 100%;  */
+         box-shadow: 1px 1px 10px 1px var(--fade-black-color); 
+        box-shadow: -5px 15px 0px  var(--fade-black-color);
+        transform: rotateX(25deg);
+        /* transform: rotateY(0deg); */
+    
+    }
+    
+    
+    /* Project image designning.... */
+    #projects>#project-items>.project-card>.prj-img img{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 1px -2px 5px 3px var(--gray-color);
+        /* border: 1px solid var(--secondary-color); */
+    }
+    
+    
+    /* Project title designing ...... */
+    #projects>#project-items>.project-card .project-title{
+        font-size: 25px; 
+       margin: 15px auto;
+        text-align: center;
+        font-weight: bold;
+        
+    
+    }
+    
+    
+    #projects>#project-items>.project-card .project-title a{
+        text-decoration: none;
+        color: var(--secondary-color);
+        text-shadow: 1px 1px 0px var(--gray-color);
+    }
+    
+    #projects>#project-items>.project-card .project-title a:hover{
+        color: var(--black-color);
+    }
+    
+    
+    
+    /* Project Description designing..... */
+    #projects>#project-items>.project-card .project-description p{
+        text-align: left;
+        font-size: 15px;
+        color: var(--fade-black-color);
+        line-height: 20px;
+    }
+    
+    
+    /* Project Tech stack aliignment..... */
+    #projects>#project-items>.project-card .project-tech-stack{
+        font-size: 18px;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin:10px auto;
+        color: var(--secondary-color);
+        text-align: center;
+        
+    }
+    
+    #projects>#project-items>.project-card .project-tech-stack img{
+        width: 7%;
+        margin: 5px;
+        align-items: center;
+       
+    }
+    
+    
+    /* Project External details section.... */
+    #projects>#project-items>.project-card>.prj-type{
+        color: var(--secondary-color);
+        font-size: 15px;
+        margin: 7px auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    #projects>#project-items>.project-card>.prj-type span{
+        color: var(--black-color);
+    }
+    
+    
+    
+    /* Set hiperLink to correspoding project...  */
+    #projects>#project-items>.project-card>.prj-links{
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 2rem;
+        margin-top: 30px;
+        color: var(--black-color);
+    }
+    
+    #projects>#project-items>.project-card>.prj-links a{
+        color: var(--black-color);
+        text-decoration: none;
+        font-size: 18px;
+        border: 1px solid var(--black-color);
+        padding: 9px;
+        border-radius: 10px;
+    }
+    #projects>#project-items>.project-card>.prj-links a:hover{
+        background-color:var(--fade-black-color);
+        color: var(--primary-color);
+    }
+    
+    
+    
+    
+    /* Technical skills section designig... */
+    
+    #skills{
+        background-color:var(--ghost-white);
+        color: var(--black-color);
+        margin: auto;
+        padding: 30px;
+    
+    }
+    
+    #skills>#techskill-content{
+        width: 80%;
+        margin:50px auto;
+        display: grid;
+        grid-template-columns:repeat(6,1fr);
+        -ms-grid-column-align: center;
+        gap:3rem;
+        /* display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap; */
+    }
+    
+    #skills>#techskill-content .skills-card{
+        background-color:var(--primary-color);
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        font-weight: bold;
+        box-shadow: 0px 0px 15px 3px var(--gray-color);
+        font-size: 18px;
+        transition: 1s;
+    }
+    
+    
+    /* #skills>#techskill-content .skills-card:hover{
+        transform: rotateZ(360deg);
+        box-shadow: 0px 0px 15px 5px var(--secondary-color);
+    
+    } */
+    
+    #skills>#techskill-content .skills-card img{
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    
+    
+    
+    
+    /* Profile banner designing........ */
+    
+    #profile-banner{
+        width: 60%;
+        margin:30px auto;
+    }
+    
+    #profile-banner img{
+        width: 100%;
+        border-radius: 20px;
+    }
+    
+    
+    
+    
+    /* Github overview............ */
+    .js-calendar-graph{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        /*justify-content: center;
+        align-items: center; */
+        /* display:block; */
+        
+        
+    }
+    .js-calendar-graph-svg{
+        width: 100%;
+    }
+    .width-full{
+        /* margin: auto;
+        display: block; */
+        text-align: center;
+        padding:10px;
+    }
+    
+    
+    #github-view{
+        width: 80%;
+        margin:50px auto;
+        color: var(--black-color);
+        font-family:ubuntu, cera-round-pro,Helvetica;
+    }
+    
+    #github-view>#github-cal{
+        margin: 50px auto;
+    }
+    
+    #github-view>#github-cal{
+        width: 100%;
+        color: var(--black-color);
+        box-sizing: border-box;
+        box-shadow: 2px 2px 15px 5px var(--gray-color);
+    }
+    
+    #github-view>#github-stats-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+    }
+    
+    #github-view>#github-stats-card img{
+        width: 100%;
+        
+    }
+    
+    #github-view>#github-top-langs {
+        width: 50%;
+        margin:30px auto;
+    }
+    
+    #github-view>#github-top-langs img{
+        width: 100%;
+        
+    }
+    
+    #github-view .github-property{
+        box-shadow: 2px 2px 15px 5px var(--gray-color);
+        transition: 0.5s;
+    }
+    
+    #github-view .github-property:hover{
+        box-shadow: 2px 2px 10px 1px var(--secondary-color);
+        transform: rotateZ(-2deg);
+    
+    }
+    
+    
+    
+    
+    
+    /* Bullet point allignment designed...... */
+    
+    #bullet-points{
+        width: 80%;
+        margin:80px auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 70px;
+        color: ghostwhite;
+        
+    }
+    
+    #bullet-points>.bullet-box{
+        padding: 10px;
+        text-align: center;
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        background-color:var(--secondary-color);
+        border-radius: 20px;
+        box-shadow: 5px 5px 1px var(--black-color);
+    }
+    
+    #bullet-points>.bullet-box .line1{
+        font-size: 25px;
+    }
+    
+    #bullet-points>.bullet-box .line2{
+        font-size: 30px;
+        font-weight: bold;
+        margin: 5px auto;
+        color:white;
+    }
+    
+    
+    
+    /* Contact form designing........ */
+    
+    #contact{
+        color: var(--black-color);
+        margin: 50px auto;
+        padding: 30px;
+        background-color:var(--ghost-white);
+    }
+    
+    
+    #contact-section{
+        display: flex;
+        justify-content: space-around;
+        padding:30px;
+        /* margin:auto 30px; */
+        gap: 20px;
+    }
+    
+    #contact #contact-left{
+        width: 50%;
+        margin: auto;
+    }
+    
+    
+    #contact #contact-left img{
+        width: 100%;
+    }
+    
+    
+    
+    /* contact right section alignment..... */
+    #contact #contact-right{
+        width: 40%;
+        margin: auto;
+    }
+    #social-icons2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+        text-align: center;
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        margin: 30px auto;
+        width: 80%;
+        
+    }
+    
+    #social-icons2 div{
+        padding: 10px;
+        /* background-color: rgb(5, 5, 5); */
+        border-radius: 7px;
+        border: 1px solid var(--black-color);
+    }
+    #social-icons2 div:hover{
+        box-shadow: 1px 1px 5px var(--fade-black-color);
+    }
+    
+    #social-icons2 a{
+        text-decoration: none;
+        color: white;
+    
+    }
+     
+    #social-icons2 .linkedin-icon2{
+        background-color: #0a66c2;
+        
+    }
+    
+    #social-icons2 .github-icon2{
+        background-color: #3f3d55;
+    
+    }
+    
+    #social-icons2 .mail-icon2{
+        background-color: #f04244;
+    
+    }
+    
+    
+    #social-icons2 .call-icon2{
+        background-color: #57bd50;
+    
+    } 
+    
+    
+    
+    
+    /* or tag designed.... */
+    
+    #contact #contact-right{
+        width:50%;
+    }
+    
+    
+    #contact #contact-right>p{
+        padding: 10px;
+        text-align: center;
+        margin: 20px auto;
+        /* border: 1px solid var(--fade-black-color); */
+    }
+    
+    
+    
+    
+    
+    /* contact form Designing........ */
+    #contact #contact-right #contact-form{
+        width: 60%;
+        margin: auto;
+    }   
+    
+    #contact #contact-right #contact-form input,textarea{
+        width: 100%;
+        /* height: 5vh; */
+        /* margin: auto; */
+        padding: 9px;
+        font-size: 15px;
+        background-color: transparent;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border:1.5px solid var(--secondary-color);
+        box-shadow: 0px 2px 1px var(--fade-black-color);
+        color: var(--black-color);
+        background-color:var(--primary-color);
+    }
+    
+    
+    #contact #contact-right #contact-form .upload-area{
+        font-size:20px ;
+    }
+    
+    #contact #contact-right #contact-form .upload-area select{
+        width: 20vw;
+        font-size: 18px;
+        border: 1px solid var(--secondary-color);
+    }
+    
+    
+    /* Upload button hidden styles are added here. */
+    #contact #contact-right #contact-form #upload-box{
+        position: absolute;
+        visibility: hidden;
+    
+    }
+    #contact #contact-right #contact-form #upload-box #uploaded_show{
+        width: 15%;
+        margin: auto;
+        border: 1px solid var(--secondary-color);
+        box-shadow: 1px 1px 5px 0px var(--fade-black-color);
+    }
+    #contact #contact-right #contact-form #upload-box #uploaded_show img{
+        width: 100%;
+        /* margin: auto; */
+    }
+    
+    #contact #contact-right #contact-form #upload-box input{
+        padding: 0px;
+        /* height: 5vh; */
+        box-shadow: none;
+        margin: 5px auto;
+        
+    }
+    
+    #contact #contact-right #contact-form #upload-box input::-webkit-file-upload-button{
+        background-color:var(--secondary-color);
+        border: none;
+        color: var(--black-color);
+        width: 40%;
+        font-size: 16px;
+        padding: 7px;
+        transition: 0.2s;
+       cursor: pointer;
+    }
+    
+    #contact #contact-right #contact-form #upload-box input::-webkit-file-upload-button:hover{
+        background-color:var(--fade-black-color);
+        color:var(--primary-color);
+    }
+    
+    #contact #contact-right #contact-form .contact-form-btn{
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    
+    #contact #contact-right #contact-form .contact-form-btn button{
+        font-size: 18px;
+        padding: 10px;
+        background-color:var(--secondary-color);
+        border: none;
+        border-radius: 10px;
+        color: var(--primary-btn-colr);
+        cursor: pointer;
+        box-shadow: 0px 1px var(--fade-black-color);
+        transition: 0.2s;
+    }
+    
+    #contact #contact-right #contact-form .contact-form-btn #form-reset-btn{
+        background-color:var(--red-color);
+    }
+    
+    #contact #contact-right #contact-form .contact-form-btn button:hover{
+        background-color:#074584;
+    }
+    
+    
+    
+    
+    /* Footer section designing............ */
+    
+    #footer-section{
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        background-color:#0880f7;
+        padding: 15px;
+        text-align: center;
+        font-size: 15px;
+        color: var(--primary-btn-colr);
+    }
+    
+    #footer-section #social-icons2{
+        width: 20%;
+        margin:10px auto;
+        font-size: 15px;
+        /* padding: 2px; */
+        
+    }
+    #footer-section #social-icons2>div{
+        padding: 7px;
+        border-radius: 20px;
+    }
+    
+    
+    
+    
+    /* Alert pop section  */
+    
+    #alert-section{
+        font-family:ubuntu, cera-round-pro,Helvetica;
+        width: 35%;
+        margin: auto;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        padding: 15px;
+        background-color:green;
+        color: white;
+        border-radius: 5px;
+    
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 200;
+        box-shadow: 0px 0px 5px var(--fade-black-color);
+        transition: 0.2s;
+        visibility: hidden;
+    }

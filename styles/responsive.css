@@ -1,0 +1,497 @@
+:root{
+        --primary-color:#ffffff;
+        --secondary-color:#146ebe;
+        --black-color:#000000;
+        --fade-black-color:#333333;
+        --gray-color:rgb(209, 209, 209);
+        --ghost-white:ghostwhite;
+        --primary-btn-colr:ghostwhite;
+        --red-color:#d70606;
+    }
+    
+    .dark-mode{
+        --primary-color:#181818;
+        --secondary-color:#146ebe;
+        --black-color:ghostwhite ;
+        --fade-black-color:#ffffff;
+        --gray-color:rgb(209, 209, 209);
+        --ghost-white:black;
+    }
+    
+    
+    
+    /* For mediup Screen size....... */
+    @media all and (min-width:650px) and (max-width:1100px){
+        #navbar>#logo{
+            font-size: 2rem;
+            margin: auto;
+        }
+        #navbar>#logo>.logo-name>p>span{
+            font-size: 3rem;
+        }
+    
+        #navbar>#change-theme{
+            margin: auto;
+        }
+        #menu-list>ul>li a{
+            font-size:0.7rem;
+            margin:auto 5px;
+        }
+    
+        #primary-btn{
+            font-size: 0.6rem;
+            padding: 7px;
+        }
+    
+    
+    
+    /* main section */
+        #main-section{
+            width: 100%;
+            
+        }
+        #main-section>#main-left{
+            font-size: 1.2rem;
+            
+        }
+        #main-section>#main-left>.name-sec span{
+            font-size: 2rem;
+        }
+        #main-section>#main-left>#subtitle-sec{
+            font-size: 1.2rem;
+        }
+        #main-section>#main-left>#subtitle-sec .auto-type{
+            font-size: 1.3rem;
+        }
+    
+        #main-section>#main-left>#social-icon-1 div i{
+            font-size: 18px;
+            padding: 9px;
+        }
+        #main-section>#main-left>.resume-btn-1 #primary-btn{
+            font-size: 15px;
+            margin: 30px auto;
+            border-radius: 5px;
+        }
+    
+        
+    
+        .primary-heading{
+            font-size: 30px;
+        }
+    
+        /* About Section...... */
+        #About>.content-section>.about-content p{
+            font-size: 17px;
+        }
+    
+        #About>.content-section{
+            display: block;
+        }
+        #About>.content-section>.about-img{
+            width: 50%;
+        }
+        #About>.content-section>.about-content{
+            width: 90%;
+        }
+    
+    
+        /* #tech-skill>#techskill-content{
+            grid-template-columns:repeat(3,1fr);
+        }
+    
+        #bullet-points{
+            grid-template-columns: repeat(2,1fr)
+        } */
+    
+    
+    
+    
+        /* Project section......... */
+        #project>#project-items>.prj-box .prj-title{
+            font-size: 18px;
+        }
+    
+        #project>#project-items>.prj-box .prj-decription p{
+            font-size: 15px;
+        }
+        #project>#project-items>.prj-box>.prj-links{
+            font-size: 1.5rem;
+        }
+    
+    
+    
+    /* Tech-skill section */
+        
+        #tech-skill>#techskill-content{
+            width: 90%;
+            grid-template-columns:repeat(5,1fr);
+            gap: 1rem;
+    
+        }
+        #tech-skill>#techskill-content .skill-box{
+            font-size: 16px;
+        }
+    
+    
+        /* Bullet points...... */
+        #bullet-points{
+            gap: 30px;
+        }
+    
+        #bullet-points>.bullet-box .line1{
+            font-size: 18px;
+        }
+        #bullet-points>.bullet-box .line2{
+            font-size: 20px;
+        }
+    
+    
+    
+        /* Contact section......... */
+    
+        #social-icons2{
+            font-size: 12px;
+            gap: 15px;
+        }
+    
+        #contact #contact-right #contact-form input,textarea{
+            font-size: 13px;
+            padding: 7px;
+        }
+    
+        #contact #contact-right #contact-form .upload-area{
+            font-size: 17px;
+        }
+    
+        #contact #contact-right #contact-form .upload-area select{
+            font-size: 18px;
+        }
+        #contact #contact-right #contact-form .contact-form-btn button{
+            font-size: 15px;
+            padding: 7px;
+        }
+        #alert-section{
+            width: 70%;
+            font-size: 15px;
+        }
+    
+    
+        #intro_animation div{
+            width: 30%;
+            margin:40vh auto;
+            font-size: large;
+        
+        }
+    
+    
+    }   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* ------------------------------------------------------------- */
+    
+    /* For Small Screen size.......................*/
+    
+    
+    
+    @media all and (min-width:250px) and (max-width:649px){
+        #navbar>#logo{
+            font-size: 1.5rem;
+            margin: auto;
+        }
+        #navbar>#logo>.logo-name>p>span{
+            font-size: 2rem;
+        }
+    
+        #navbar>#change-theme{
+            margin: auto;
+        }
+        #navbar>#menu-list>ul{
+            width: 60%;
+            position: fixed;
+            right: 100%;
+            top: 0px;
+            height:100vh;
+            display:block;
+            background-color:var(--ghost-white);
+            box-shadow: 10px 1px  165px var(--fade-black-color);
+            z-index: 300;
+            transition: 0.2s;
+            visibility: hidden;
+        }
+    
+        #navbar>#menu-list>ul>li{
+            color:var(--black-color);
+            font-size: 10px;
+            margin:5px 0px;
+            background-color:var(--primary-color);
+            padding: 10px;
+        }
+        #navbar #menu-close-icon i{
+            color: var(--primary-color);
+            position: absolute;
+            top: 5px;
+            left: 60%;
+            font-size: 30px;
+            visibility: hidden;
+            z-index: 301;;
+            background-color:var(--fade-black-color);
+            padding: 5px;
+        }
+    
+        #primary-btn{
+            font-size: 0.5rem;
+            padding: 7px;
+        }
+    
+        #menu-list-icon{
+            color: var(--black-color);
+            position: relative;
+            visibility: visible;
+            margin-right: 9px;
+            font-size: 20px;
+        }
+    
+    
+    
+    /* main section */
+        #main-section{
+            width: 100%;
+            display: block;
+            position: relative;
+            
+        }
+        #main-section>#main-left{
+            width: 80%;
+            margin: 50px auto;
+            font-size: 0.9rem;
+            
+        }
+        #main-section>#main-left>.salute-sec img{
+            width: 30px;
+        }
+        #main-section>#main-left>.name-sec span{
+            font-size: 1.5rem;
+        }
+        #main-section>#main-left>#subtitle-sec{
+            font-size: 1rem;
+        }
+        #main-section>#main-left>#subtitle-sec .auto-type{
+            font-size: 1.1rem;
+        }
+    
+        #main-section>#main-left>#social-icon-1 div i{
+            font-size: 12px;
+            padding: 7px;
+        }
+        #main-section>#main-left>.resume-btn-1 #primary-btn{
+            font-size: 10px;
+            margin: 10px auto;
+        }
+        
+    
+        #main-section>#main-right{
+            /* width: 20%; */
+            position: absolute;
+            top:1%;
+            left: 80%;
+            transform: translateX(-50%);
+        }
+        #main-section>#main-right img{
+            width: 50%;
+            margin: auto;
+        }
+    
+    
+        .primary-heading{
+            font-size: 20px;
+        }
+    
+    
+    
+    
+        /* About Section...... */
+        #About{
+            padding: 10px;
+        }
+    
+        #About>.content-section>.about-content p{
+            font-size: 12px;
+        }
+    
+        #About>.content-section{
+            display: block;
+        }
+        #About>.content-section>.about-img{
+            width: 30%;
+        }
+        #About>.content-section>.about-content{
+            width: 90%;
+        }
+        #About>.content-section>.about-content p i{
+            font-size: 15px;
+        }
+    
+    
+        /* #tech-skill>#techskill-content{
+            grid-template-columns:repeat(3,1fr);
+        }
+    
+        #bullet-points{
+            grid-template-columns: repeat(2,1fr)
+        } */
+    
+    
+    
+    
+        /* Project section......... */
+        #project>#project-items{
+            grid-template-columns:repeat(1,1fr);
+        }
+    
+        #project>#project-items>.prj-box .prj-title{
+            font-size: 13px;
+        }
+    
+        #project>#project-items>.prj-box .prj-decription p{
+            font-size: 10px;
+        }
+        #project>#project-items>.prj-box>.prj-links{
+            font-size: 1.1rem;
+        }
+        #project>#project-items>.prj-box>.prj-type{
+            font-size: 11px;
+        }
+    
+    
+    /* Tech-skill section */
+        
+        #tech-skill>#techskill-content{
+            width: 90%;
+            grid-template-columns:repeat(3,1fr);
+            gap: 1rem;
+    
+        }
+        #tech-skill>#techskill-content .skill-box{
+            font-size: 0.5rem;
+            padding: 10px;
+            
+        }
+        #tech-skill>#techskill-content .skill-box img{
+            width: 50%;
+        }
+    
+    
+    
+    
+    
+    /* Github section designing............. */
+    
+        #github-view{
+            width: 90%;
+            margin: auto;
+        }
+        #github-view>#github-cal{
+            margin: 10px auto;
+        }
+    
+        #github-view>#github-streak-stat{
+            display: block;
+    
+        }
+    
+        #github-view>#github-lang{
+            width: 80%;
+        } 
+    
+    /* Bullet points...... */
+        #bullet-points{
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
+        
+    
+        #bullet-points>.bullet-box .line1{
+            font-size: 15px;
+        }
+        #bullet-points>.bullet-box .line2{
+            font-size: 17px;
+        }
+    
+    
+    
+        /* Contact section......... */
+    
+    
+        #contact #contact-left{
+            visibility: hidden;
+            position: absolute;
+        }
+        #contact #contact-right{
+            /* width: 100%; */
+            margin: auto;
+        }
+    
+        #social-icons2{
+            font-size: 10px;
+            gap: 12px;
+            width: 90%;
+        }
+    
+        #contact #contact-right #contact-form{
+            width: 95%;
+            margin:auto
+        }
+    
+    
+    
+    /* Footer section............ */
+    
+        #footer-section{
+            font-size: 10px;
+            padding: 9px;
+        }
+    
+    
+    
+    
+    
+    
+        #contact #contact-right #contact-form input,textarea{
+            font-size: 13px;
+            padding: 7px;
+        }
+    
+        #contact #contact-right #contact-form .upload-area{
+            font-size: 17px;
+        }
+    
+        #contact #contact-right #contact-form .upload-area select{
+            font-size: 18px;
+        }
+        #contact #contact-right #contact-form .contact-form-btn button{
+            font-size: 15px;
+            padding: 7px;
+        }
+    
+        #alert-section{
+            width: 70%;
+            font-size: 13px;
+        }
+        
+        #intro_animation div{
+            width: 40%;
+            margin:40vh auto;
+            font-size: small;
+        
+        }
+    
+    
+    }
